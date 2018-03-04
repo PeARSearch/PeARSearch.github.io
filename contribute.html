@@ -1,118 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Contribute | PeARS</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/lightbox.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
-
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
-</head><!--/head-->
-
+  <meta charset="UTF-8">
+  <title>Contribute | PeARS</title>
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/website.css">
+  <link rel="shortcut icon" href="images/ico/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head>
 <body>
-<header id="header">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 overflow">
-                <div class="social-icons pull-right">
-                    <ul class="nav nav-pills">
-                        <li><a href="https://github.com/PeARSearch"><i class="fa fa-github"></i></a></li>
-                        <li><a href="http://lists.pearsearch.org/"><i class="fa  fa-envelope-o"></i></a></li>
-                    </ul>
-                </div>
-            </div>
+  <section class="Layout__Sidebar">
+    <img class="Logo" src="images/logo.svg" alt="Pearsearch logo"/>
+    <nav class="Navigation Navigation--Main">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="technology.html">What is PeARS?</a></li>
+          <li><a href="philosophy.html">Philosophy</a></li>
+          <li><a href="posts.html">Writing</a></li>
+          <li class="Navigation--Selected"><a href="contribute.html">Contribute</a></li>
+          <li><a href="faq.html">F.A.Q.</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="downloads.html">Downloads</a></li>
+    </nav>
+    <hr class="Navigation__Splitter"/>
+    <nav class="Navigation Navigation--Secondry">
+      <li><a href="https://github.com/PeARSearch/PeARS-orchard">Install from Github</a></li>
+    </nav>
+  </section>
+  <section class="Layout__Content">
+    <h1 class="PageTitle">Help the team</h1>
+
+    <div><img src="images/team/team-grayscale.png" width="600px"/></div><br><br>
+
+    <h2>Step 1: Setting up the PeARS environment</h2>
+    <p>First, the best way to get acquainted with the current state of the project is to install the development version. Please follow the instructions here to set things up</p>
+    <div id="#instruction-set" class="InstructionSet">
+      <div class="InstructionSet__Header">
+        <p class="InstructionSet__Title">Click to expand Instruction set</p>
+        <i class="Icon__ArrowDown"></i>
+      </div>
+      <div class="InstructionSet__Content hide">
+        <ol class="InstructionSet__List InstructionSet__List--Main">
+          <li class="InstructionSet__ListItem">
+            <h3>1. Clone PeARS repo</h3>
+            <pre>git clone https://github.com/PeARSearch/PeARS-orchard.git</pre>
+            <pre>cd PeARS-orchard</pre>
+          </li>
+          <li class="InstructionSet__ListItem">
+            <h3>2. Setting up the environment</h3>
+            <ol class="InstructionSet__List InstructionSet__List--Sub">
+              <li class="InstructionSet__ListItem">
+                <h4>2.1. Set up virtualenv</h4>
+                <p>We recommend using virtualenv for the development. If you are just here for test it out, skip to the next section.</p>
+                <h5>Install pip3 using easy_install</h5>
+                <pre>sudo easy_install pip3</pre>
+                <p>or some other way your distribution supports like:</p>
+                <pre>sudo yum install python3-pip</pre>
+                <h5>Install virtualenv using pip3</h5>
+                <pre>sudo pip3 install virtualenv</pre>
+                <h5>Create a new virtualenv for PeARS and activate it</h5>
+                <pre>virtualenv -p python3 env && source env/bin/activate</pre>
+              </li>
+              <li class="InstructionSet__ListItem">
+                <h4>2.2. Install the build dependencies</h4>
+                <p>We recommend using pip for installation. In case you don't have this, look inside requirements.txt and install dependencies manually.</p>
+                <pre>pip3 install -r requirements.txt</pre>
+              </li>
+              <li class="InstructionSet__ListItem">
+                <h4>2.3. Unpack the semantic space</h4>
+                <p>In the root directory of the repo, run</p>
+                <pre>cd app/static/spaces</pre>
+                <p>then</p>
+                <pre>english.dm.zip</pre>
+              </li>
+            </ol>
+          </li>
+          <li class="InstructionSet__ListItem">
+            <h3>3. Running the PeARS search engine</h3>
+            <p>In the root directory of the repo, run</p>
+            <pre>python3 run.py</pre>
+            <p>Go to the browser and type localhost:8080. You should find PeARS running there. You don't have any pages indexed yet, so go to the F.A.Q. page (link at the top of the page) and follow the short instructions to get you going!</i></p>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <p>Do let us know is anything isn't working for you by opening an issue on the GitHub page!</p>
+
+    <h2 class="Gap--45">Step 2: Check for open issues</h2>
+    <p> Check out the current issues in the PeARS repo. You may find something you might like to contribute to. Things are changing quite rapidly, so it is always best to drop us a short line saying you'd like to take on the issue before you actually make a start. We may have more up-to-date info than what is on GitHub!</p>
+    <ol class="Issues">
+      <li class="Issue">
+        <img class="Issue__Icon" src="images/github-blue.svg"/>
+        <div class="Issue__Content">
+          <a href="#">
+            <h3>PeARSearch/PeARS-orchard</h3>
+          </a>
+          <p class="Issue__Count">Open Issues:
+            <span class="Issue__CountValue" id="PeARS-orchard">
+              <img src="images/spinner.gif"/>
+            </span>
+          </p>
         </div>
-    </div>
-    <div class="navbar navbar-inverse" role="banner">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+      </li>
+    </ol>
 
-                <a class="navbar-brand" href="index.html">
-                    <h1><img src="images/logo.png" alt="logo" height="80"></h1>
-                </a>
+    <h2 class="Gap--45">Step 3: Connect with the Team</h2>
+    <p>if you have other ideas, comments, problems, don't hesitate to contact us, either on the GitHub issue page, or via IRC. One of us is usually hanging about at #pears on Freenode.</p><br><br>
 
-            </div>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="https://github.com/PeARSearch">Our Code</a></li>
-                    <li class="active"><a href="background.html">Technology</a></li>
-                    <li class="active"><a href="contribute.html">Contribute</a></li>
-                </ul>
-            </div>
-
+    <section>
+    <ul class="Team">
+      <li class="Member">
+        <img class="Member__Photo" src="images/team/aurelie-grayscale.png" alt="photo of Aurelie Herbelot"/>
+        <div class="Member__Content">
+          <h3 class="Member__Name">Aurelie Herbelot</h3>
+          <p class="Member__Designation">Computational Linguist</p>
+          <span class="Member__Social">
+            <a href="http://aurelieherbelot.net/" target="_blank">
+              Website
+            </a>
+          </span>
+          <span class="Member__Social">
+            <a href="https://github.com/minimalparts/" target="_blank">
+              Github
+            </a>
+          </span>
+          <p class="Member__Bio">Having worked as a fluffy toy seller, a mortgage adviser and random other things, Aurelie decided that her real vocation was, in fact, computational semantics. In 2010, she received her PhD in Natural Language Processing from the Computer Laboratory at the University of Cambridge and has been working in research since then. Her work focuses on building computer systems which simulate human language understanding.</p>
         </div>
-    </div>
-</header>
-<!--/#header-->
-
-
-<section id="features">
-    <div class="container">
-        <div class="row">
-            <div class="single-features">
-                <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                    <img src="images/home/clients.png" class="img-responsive" alt="">
-                </div>
-                <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                    <h2>Would you like to contribute?</h2>
-                    <P>Hi! Would you like to help with PeARS? That's great! Here are a few pointers to get you started.
-                        </p>
-
-                    <p>First, the best way to get acquainted with the current state of the project is to install the development version. Please follow the instructions <a href="https://github.com/PeARSearch/PeARS/tree/development">here</a> to set things up -- and do let us know is anything isn't working for you. In case you'd like to read up on the technical background for PeARS, we have provided a few useful links <a href="background.html">here</a>.</p>
-
-		<p>Next, check out the current issues in the <a href="https://github.com/PeARSearch/PeARS/issues">PeARS</a> and <a href="https://github.com/PeARSearch/browsing-history-analyser/issues">browsing-history-analyser</a> repos. You may find something you might like to contribute to. Things are changing quite rapidly, so it is always best to drop us a short line saying you'd like to take on the issue before you actually make a start. We may have more up-to-date info than what is on GitHub!</p>
-
-		<p>And of course, if you have other ideas, comments, problems, don't hesitate to contact us, either on IRC or on our discussion board (see below for details).</p>
-
-		<p> Thanks for helping!!</p>
-                </div>
-            </div>
-    	</div>
-    </div>
-</section>
-<!--/#features-->
-
-<section id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-lg-offset-2 text-center">
-                <i class="fa fa-comment fa-3x wow bounceIn"></i>
-                <p>IRC: #pears on <a href="http://webchat.freenode.net/">Freenode</a></p>
-            </div>
-            <div class="col-lg-4 text-center">
-                <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                <p><a href="http://lists.pearsearch.org">PeARS Discourse Discussions</a></p>
-            </div>
+      </li>
+      <li class="Member">
+        <img class="Member__Photo" src="images/team/behrang-grayscale.png" alt="photo of Aurelie Herbelot"/>
+        <div class="Member__Content">
+          <h3 class="Member__Name">Behrang QasemiZadeh</h3>
+          <p class="Member__Designation">Computer Scientist</p>
+          <span class="Member__Social">
+            <a href="http://pars.ie/about" target="_blank">
+              Website
+            </a>
+          </span>
+          <span class="Member__Social">
+            <a href="https://github.com/languagerecipes/" target="_blank">
+              Github
+            </a>
+          </span>
+          <p class="Member__Bio">Behrang is a cliché computer scientist! Currently part of a team of linguists, philosophers, and neurocognitive scientists trying to describe a Barsalou-ian uniform structure of representations. His role is to design and write algorithms to simulate or to provide evidence of theoretical findings. This often involves exploring empirical data-driven distributional methods of natural language processing. One of Behrang’s hobbies is also programming! Other than that, he likes playing with his daughter and watching how she picks up the three languages spoken at home.</p>
         </div>
-    </div>
-</section>
-<br/><br/><br/>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/lightbox.min.js"></script>
-<script type="text/javascript" src="js/wow.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+      </li>
+      <li class="Member">
+        <img class="Member__Photo" src="images/team/hrishi-grayscale.png" alt="photo of Aurelie Herbelot"/>
+        <div class="Member__Content">
+          <h3 class="Member__Name">Hrishikesh K. B.</h3>
+          <p class="Member__Designation">Python Hacker</p>
+          <span class="Member__Social">
+            <a href="https://stultus.in/" target="_blank">
+              Website
+            </a>
+          </span>
+          <span class="Member__Social">
+            <a href="https://github.com/stultus/" target="_blank">
+              Github
+            </a>
+          </span>
+          <p class="Member__Bio">A Pythonista by profession and passion, stultus is addicted to books, coffee, and his computer. As an activist and a social worker, he believes that when you don't like something you say it out loud and if your say is not heard, you act on it. So don't be surprised if you happen to see him on newspapers and other media.</p>
+        </div>
+      </li>
+      <li class="Member">
+        <img class="Member__Photo" src="images/team/nandaja-grayscale.png" alt="photo of Aurelie Herbelot"/>
+        <div class="Member__Content">
+          <h3 class="Member__Name">Nandaja Varma</h3>
+          <p class="Member__Designation">Python Hacker</p>
+          <span class="Member__Social">
+            <a href="https://gemiam.in/" target="_blank">
+              Website
+            </a>
+          </span>
+          <span class="Member__Social">
+            <a href="https://github.com/nandajavarma" target="_blank">
+              Github
+            </a>
+          </span>
+          <p class="Member__Bio">Die hard computer devotee with crazy fetish for kick-boxing, cycling, and above all traveling. Gets paid for writing Free and Open Source software( a.k.a works for Red Hat).</p>
+        </div>
+      </li>
+      <li class="Member">
+        <img class="Member__Photo" src="images/team/shobha-grayscale.png" alt="photo of Aurelie Herbelot"/>
+        <div class="Member__Content">
+          <h3 class="Member__Name">Shobha Tyagi</h3>
+          <p class="Member__Designation">PhD Student</p>
+          <span class="Member__Social">
+            <a href="https://github.com/curiousDTU" target="_blank">
+              Github
+            </a>
+          </span>
+          <p class="Member__Bio">Nature lover, learner, GNOME foundation documentation team member, pursuing PhD in IT, Shobha is working as Assistant Professor. She is fond of eating tasty food but finds it difficult to cook the same.</p>
+        </div>
+      </li>
+      <li class="Member">
+        <img class="Member__Photo" src="images/team/veesa-grayscale.png" alt="photo of Aurelie Herbelot"/>
+        <div class="Member__Content">
+          <h3 class="Member__Name">Veesa Norman</h3>
+          <p class="Member__Designation">Mysterious Hacker</p>
+          <span class="Member__Social">
+            <a href="https://github.com/veesa" target="_blank">
+              Github
+            </a>
+          </span>
+        </div>
+      </li>
+    </ul>
+    </section>
+
+    <ul class="Splitter">
+      <li class="Splitter__Square Splitter__Square--small"></li>
+      <li class="Splitter__Square Splitter__Square--big"></li>
+      <li class="Splitter__Square Splitter__Square--small"></li>
+    </ul>
+
+    
+
+  </section>
+  <script type="text/javascript" src="scripts/contribute.js"></script>
 </body>
 </html>

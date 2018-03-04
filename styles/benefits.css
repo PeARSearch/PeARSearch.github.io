@@ -1,0 +1,30 @@
+.Benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Benefit  {
+  display: flex;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.Benefit:last-child {
+  margin-bottom: 0;
+}
+
+.Benefit__Content {}
+
+.Benefit__Title {
+  margin-bottom: 5px;
+}
+
+.Benefit__Description {}
+
+.Benefit__Icon  {
+  width: 58px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  margin: 0 0 0 80px;
+}

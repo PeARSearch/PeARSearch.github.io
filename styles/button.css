@@ -1,0 +1,27 @@
+.Button {
+  padding: 10px 50px;
+  border-radius: 3px;
+  background-color: #26AED5;
+  border-bottom: 3px solid #1D90B1;
+  display: table;
+  text-decoration: none;
+  transition: all ease-in-out 200ms;
+}
+
+.Button:hover {
+  background-color: #26b9e0;
+}
+
+.Button__Icon {
+  width: 28px;
+  margin-right: 20px;
+  float: left;
+}
+
+.Button__Text {
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 2px;
+  display: inline-block;
+  text-shadow: #1D90B1 0 2px 0;
+}

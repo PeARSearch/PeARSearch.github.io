@@ -1,0 +1,27 @@
+.Layout__Sidebar  {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 160px;
+  padding-top: 60px;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+.Layout__Content  {
+  width: 630px;
+  margin-left: 325px;
+  padding: 60px 0;
+  box-sizing: border-box;
+}
+
+.Layout__Download  {
+  width: auto;
+  margin-left: 325px;
+  padding: 60px 0;
+  box-sizing: border-box;
+}
+
+.Gap--45 {
+  margin-top: 45px;
+}

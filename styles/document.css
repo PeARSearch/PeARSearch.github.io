@@ -1,0 +1,28 @@
+.Document {
+  border: 1px solid #eeeeee;
+  border-radius: 3px;
+  padding: 20px;
+  margin: 15px 100px 15px 0;
+  box-shadow: 0 1px 1px 0 #eee;
+}
+
+.Document__Title  {
+  margin-bottom: 15px;
+}
+
+.Document__Author {
+  margin-bottom: 15px;
+}
+
+.Document__Author:last-child  {
+  margin-bottom: 0;
+}
+
+.Document__Author__Name {
+  margin-bottom: 5px;
+}
+
+.Document__Author__Designation  {
+  color: #808080;
+  font-size: 14px;
+}

@@ -1,0 +1,86 @@
+.InstructionSet {
+  border-radius: 3px;
+  border: 1px solid #dddddd;
+  margin: 15px 0;
+  transition: all ease-in-out 200ms;
+}
+
+.InstructionSet:hover {
+  box-shadow: 0 1px 1px 0 #eee;
+}
+
+.InstructionSet__Header {
+  background-color: #fafafa;
+  display: flex;
+  padding: 13px 20px;
+  cursor: pointer;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.InstructionSet__Title  {
+  color: #1D90B1;
+  flex-grow: 1;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.InstructionSet__Icon  {
+  flex-grow: 0;
+}
+
+.InstructionSet__Content  {
+  padding: 45px 20px;
+  box-sizing: border-box;
+  border-top: 1px solid #dddddd;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.InstructionSet__List {
+  list-style: none;
+}
+
+.InstructionSet__List--Main {
+  margin: 0;
+  padding: 0;
+}
+
+.InstructionSet__List--Sub  {
+  margin: 45px 0 0 0;
+  padding: 0 15px;
+}
+
+.InstructionSet__ListItem {
+  margin: 0 0 45px 0;
+  padding-left: 5px;
+}
+
+.InstructionSet__ListItem:last-child  {
+  margin: 0;
+}
+
+.InstructionSet__Content h2,
+.InstructionSet__Content h3,
+.InstructionSet__Content h4,
+.InstructionSet__Content p  {
+  margin: 0 0 15px 0;
+}
+
+.InstructionSet__Content p:last-child {
+  margin: 0;
+}
+
+.InstructionSet__Content p  {
+  font-size: 16px;
+}
+
+.InstructionSet__Content pre  {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 14px;
+  white-space: pre-wrap;
+  display: table;
+  word-break: break-all;
+  background-color: #eeeeee;
+  padding: 4px 8px;
+}

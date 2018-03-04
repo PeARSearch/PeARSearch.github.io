@@ -1,387 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Home | PeARS</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/lightbox.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
-
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>The People's search engine | PeARS</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500" rel="stylesheet" />
+    <link href="styles/website.css" rel="stylesheet" />
+    <link href="styles/image.css" rel="stylesheet" />
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
-</head><!--/head-->
+  </head>
+  <body>
+      <section class="Layout__Sidebar">
+        <img class="Logo" src="images/logo.svg" alt="Pearsearch logo"/>
+        <nav class="Navigation Navigation--Main">
+          <li class="Navigation--Selected"><a href="index.html">Home</a></li>
+          <li><a href="technology.html">What is PeARS?</a></li>
+          <li><a href="philosophy.html">Philosophy</a></li>
+          <li><a href="posts.html">Writing</a></li>
+          <li><a href="contribute.html">Contribute</a></li>
+          <li><a href="faq.html">F.A.Q.</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="downloads.html">Downloads</a></li>
+        </nav>
+        <hr class="Navigation__Splitter"/>
+        <nav class="Navigation Navigation--Secondry">
+          <li><a href="https://github.com/PeARSearch/PeARS-orchard">Install from Github</a></li>
+        </nav>
+      </section>
+      <section class="Layout__Content">
 
-<body>
-<header id="header">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 overflow">
-                <div class="social-icons pull-right">
-                    <ul class="nav nav-pills">
-                        <li><a href="https://github.com/PeARSearch"><i class="fa fa-github"></i></a></li>
-                        <li><a href="http://lists.pearsearch.org/"><i class="fa  fa-envelope-o"></i></a></li>
-                    </ul>
-                </div>
-            </div>
+        <h1 class="PageTitle">PeARS: <br/> the people's search engine</h1>
+
+        <section>
+        <div><img src="images/snow_pod_frontpage.png" width="600px"/></div><br><br>
+        <h2>'We will snow' - join our campaign to index the Web!</h2>
+    
+        <p>A single snowflake is small, fragile, hardly visible. But taken together, snowflakes can cover entire landscapes, from remote valleys to inaccessible mountain peaks. So it is that many of us, working together, can do what only powerful organisations have achieved so far: explore, search and share the World Wide Web.</p><br>	
+
+        <p>Phase 1 of PeARS, codename 'Orchard', is a decentralised Web search system allowing people to easily <i>index</i> their favourite web pages (i.e. produce a computer-readable, searchable representation of the pages' content). Its main feature is the ability to convert a small index into a greyish, unassuming picture, called a 'snow pod'. Snow pods are the mini-weapons of the indexing revolution. They can easily be shared with others by email, on social media, or through any other mean, so you can be your very own search engine, for yourself and for your friends.</p><br>
+
+        <p>Intrigued? Then <a href="writings/We-will-snow-web-indexing.html">read the whole story</a> or directly find out <a href="writings/Which-web-indexer-are-you.html">which type of Web indexer</a> you are!</p>
+       
+        </section>
+
+        <ul class="Splitter">
+          <li class="Splitter__Square Splitter__Square--small"></li>
+          <li class="Splitter__Square Splitter__Square--big"></li>
+          <li class="Splitter__Square Splitter__Square--small"></li>
+        </ul>
+
+
+        <div class="CallToAction">
+          <a class="Button" href="https://github.com/PeARSearch" target="_blank">
+            <img class="Button__Icon" src="images/github-white.svg" alt="github logo"/>
+            <span class="Button__Text">Checkout Code</span>
+          </a>
+          <p class="CallToAction__Hint">join now and start contributing</p>
         </div>
-    </div>
-    <div class="navbar navbar-inverse" role="banner">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
 
-                <a class="navbar-brand" href="index.html">
-                    <h1><img src="images/logo.png" alt="logo" height="80"></h1>
-                </a>
-
-            </div>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="https://github.com/PeARSearch">Our Code</a></li>
-                    <li class="active"><a href="background.html">Technology</a></li>
-                    <li class="active"><a href="contribute.html">Contribute</a></li>
-                </ul>
-            </div>
-
-        </div>
-    </div>
-</header>
-<!--/#header-->
-
-<section id="home-slider">
-    <div class="container">
-        <div class="row">
-            <div class="main-slider">
-                <div class="slide-text">
-                    <h1>Peer-to-peer Agent for Reciprocated Search</h1>
-                    <p></p>
-                    <!--<a href="https://demo.pearsearch.org" class="btn btn-common">TRY NOW</a>-->
-                    <a href="" class="btn btn-common">Scroll down to learn more</a>
-                </div>
-                <img src="images/home/slider/hill.png" class="slider-hill" alt="slider image">
-                <img src="images/home/slider/house.png" class="slider-house" alt="slider image">
-                <img src="images/home/slider/sun.png" class="slider-sun" alt="slider image">
-                <img src="images/home/slider/birds1.png" class="slider-birds1" alt="slider image">
-                <img src="images/home/slider/birds2.png" class="slider-birds2" alt="slider image">
-            </div>
-        </div>
-    </div>
-    <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
-</section>
-<!--/#home-slider-->
-
-<section id="services">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
-                <div class="single-service">
-                    <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <img src="images/home/icon1.png" alt="">
-                    </div>
-                    <h2>Distributed &amp collaborative</h2>
-                    <p>PeARS is a search engine run <i>by</i> all and
-                        <i>for</i> all. Data and algorithms are built
-                        and shared by the people who will use them. Everybody
-                        who browses the Web is a potential contributor.</p>
-                </div>
-            </div>
-            <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
-                <div class="single-service">
-                    <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
-                        <img src="images/home/icon2.png" alt="">
-                    </div>
-                    <h2>Lightweight</h2>
-                    <p>We want the search engine you use everyday
-                        to run efficiently on your laptop. No server farms
-                        needed!</p>
-                </div>
-            </div>
-            <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
-                <div class="single-service">
-                    <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
-                        <img src="images/home/icon3.png" alt="">
-                    </div>
-                    <h2>Free and Open Source</h2>
-                    <p>We are strong supporters of Free Software and
-                        Open Source philosophy. Our source code is open
-                        and whole-heartedly <a href="contribute.html">welcome contributions</a>.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--/#services-->
-
-<section id="action" class="responsive">
-    <div class="vertical-center">
-        <div class="container">
-            <div class="row">
-                <div class="action take-tour">
-                    <div class="col-sm-7 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h1 class="title">PeARSearch</h1>
-                        <p>A lightweight, distributed search engine</p>
-                    </div>
-                    <div class="col-sm-5 text-center wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <!-- <div class="tour-button">
-                            <a href="https://demo.pearsearch.org" class="btn btn-common">COME BACK SOON FOR A DEMO</a>
-                        </div>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--/#action-->
-
-<section id="features">
-    <div class="container">
-        <div class="row">
-            <div class="single-features">
-                <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                    <img src="images/home/image1.png" class="img-responsive" alt="">
-                </div>
-                <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                    <h2>About PeARS</h2>
-                    <P>PeARS (Peer-to-peer Agent for Reciprocated Search) is a lightweight, distributed search engine.
-                        It relies on people going about their normal business and browsing the Web. While they do so,
-                        the pages they visit are indexed in the background, and assigned a 'meaning' (is this page about
-                        cats, fashion, ancient history? what is the 'gist' of the document?) From time to time, they can
-                        choose to share some or all of these meanings with others, providing the building stones of a
-                        giant search engine network, distributed across users.</p>
-
-                    <p>Think of PeARS as a layer of virtual agents underlying a community of real people. Your virtual
-                        agent is responsible for sharing your Web knowledge in the way you choose, and for contacting
-                        other people's agents to help you answer your queries. All completely automatically.</P>
-		    <p> At the moment, PeARS is still under development. We will release a first version of the full software in the Autumn (and hopefully other goodies beforehand!) Stay tuned!</p>
-                </div>
-            </div>
-            <div class="single-features">
-                <div class="col-sm-6 col-sm-offset-1 align-right wow fadeInLeft" data-wow-duration="500ms"
-                     data-wow-delay="300ms">
-                    <h2>Freedom of search...</h2>
-                    <P>A lot of great work is currently being done in favour of the open licensing of data, but one
-                        important issue remains left aside: is the process by which we access virtual content open? If
-                        tomorrow, the entire Web entered the public domain, would we truly have free access to the
-                        world's knowledge? Probably not. Having billions of free documents at our disposal means nothing
-                        if we don't own the means to search them. PeARS is a step in ensuring that people will always
-                        remain free to access knowledge.</P>
-                </div>
-                <div class="col-sm-5 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                    <img src="images/home/image2.png" class="img-responsive" alt="">
-                </div>
-            </div>
-            <div class="single-features">
-                <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                    <img src="images/home/image3.png" class="img-responsive" alt="">
-                </div>
-                <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                    <h2>Privacy...</h2>
-                    <P>Searching the Web involves sharing very personal and potentially sensitive data about you: what
-                        you are doing now, what is on your mind, what you are planning to do, and millions of other
-                        things. Currently, this data is centrally stored, processed and re-sold by a few large entities
-                        without your control. In contrast, PeARS is built on the principle that people should be able to
-                        choose what they share with others. Users have control over what they index on the network. All
-                        searches happen locally, on your private machine.</P>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--/#features-->
-
-<section id="clients">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="clients text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-                    <p><img src="images/home/team.png" class="img-responsive" alt=""></p>
-                    <h1 class="title">Our Team</h1>
-                    <p>We are a varied group of tech enthusiasts,
-                        spread across the globe,<br>who came together to
-                        make the world (a.k.a Internet) a better place.</p>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="team-member">
-                            <img src="images/team/aurelie.jpg" class="img-responsive img-circle" alt="">
-                            <h4>Aurelie Herbelot</h4>
-                            <p class="text-muted">Computational linguist</p>
-                            <ul class="list-inline social-buttons">
-                                <li><a href="https://twitter.com/PeARSsearch/"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li><a href="https://github.com/minimalparts/"><i class="fa fa-github"></i></a>
-                                </li>
-                                <li><a href="http://aurelieherbelot.net/" alt="Blog"><i
-                                        class="fa fa-pencil-square-o"></i></a>
-                                </li>
-                            </ul>
-                            <p class="text-muted">IRC nick: minipa on Freenode</p>
-                            <p class="text-muted">Having worked as a fluffy toy seller, a mortgage adviser and random
-                                other things, Aurelie decided that her real vocation was, in fact, computational
-                                semantics. In 2010, she received her PhD in Natural Language Processing from the
-                                Computer Laboratory at the University of Cambridge and has been working in research
-                                since then. She is currently based at the Centre for Mind/Brain Sciences at the
-                                University of Trento, Italy. Her work focuses on building computer systems which
-                                simulate human language understanding.</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="team-member">
-                            <img src="images/team/behrang.jpg" class="img-responsive img-circle" alt="">
-                            <h4>Behrang QasemiZadeh</h4>
-                            <p class="text-muted">Computer Scientist</p>
-                            <ul class="list-inline social-buttons">
-                                <li><a href="https://www.linkedin.com/in/behrangq"><i class="fa fa-linkedin"></i></a>
-                                </li>
-                                <li><a href="https://plus.google.com/+BehrangQZadeh"><i
-                                        class="fa fa-google-plus"></i></a>
-                                </li>
-                                <li><a href="https://github.com/languagerecipes/"><i class="fa fa-github"></i></a>
-                                </li>
-                                <li><a href="http://pars.ie/about" alt="Blog"><i class="fa fa-pencil-square-o"></i></a>
-                                </li>
-                            </ul>
-                            <p class="text-muted">
-                                Behrang is a cliché computer scientist!
-                                Currently part of a team of linguists, philosophers, and neurocognitive scientists
-                                trying to describe a
-                                Barsalou-ian uniform structure of representations. His role is to design and write
-                                algorithms to
-                                simulate or to provide evidence of theoretical findings. This often involves exploring
-                                empirical data-driven distributional methods of natural language processing. One of
-                                Behrang’s hobbies is also programming!
-                                Other than that, he likes playing with his daughter and watching how she picks up the
-                                three languages spoken at home.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="team-member">
-                            <img src="images/team/hrishi.jpg" class="img-responsive img-circle" alt="">
-                            <h4>Hrishikesh K. B.</h4>
-                            <p class="text-muted">Python Hacker</p>
-                            <ul class="list-inline social-buttons">
-                                <li><a href="https://twitter.com/_stultus"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li><a href="https://github.com/stultus/"><i class="fa fa-github"></i></a>
-                                </li>
-                                <li><a href="https://stultus.in" alt="Blog"><i class="fa fa-pencil-square-o"></i></a>
-                                </li>
-                            </ul>
-                            <p class="text-muted">IRC nick: stultus on Freenode</p>
-                            <p class="text-muted">
-                                    A Pythonista by profession and passion,
-                                stultus is addicted to books, coffee, and
-                                his computer. As an activist and a social
-                                worker, he believes that when you don't like
-                                something you say it out loud and if your
-                                say is not heard, you act on it. So don't be
-                                surprised if you happen to see him on
-                                newspapers and other media.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="team-member">
-                            <img src="images/team/nandaja.jpg" class="img-responsive img-circle" alt="">
-                            <h4>Nandaja Varma</h4>
-                            <p class="text-muted">Python Hacker</p>
-                            <ul class="list-inline social-buttons">
-                                <li><a href="https://twitter.com/nandajavarma"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li><a href="https://github.com/nandajavarma"><i class="fa fa-github"></i></a>
-                                </li>
-                                <li><a href="https://gemiam.in" alt="Blog"><i class="fa fa-pencil-square-o"></i></a>
-                                </li>
-                            </ul>
-                            <p class="text-muted">IRC nick: gem on Freenode</p>
-                            <p class="text-muted">Die hard computer devotee with crazy fetish for kick-boxing, cycling,
-                                and above all traveling. Gets paid for writing Free and Open Source software( a.k.a
-                                works for Red Hat).</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="team-member">
-                            <img src="images/team/shobha.jpg" class="img-responsive img-circle" alt="">
-                            <h4>Shobha Tyagi</h4>
-                            <p class="text-muted">PhD student</p>
-                            <ul class="list-inline social-buttons">
-                                <li><a href="https://twitter.com/shobhatyagi"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li><a href="https://github.com/curiousDTU"><i class="fa fa-github"></i></a>
-                                </li>
-                            </ul>
-                            <p class="text-muted">Nature lover, learner, GNOME foundation documentation team member,
-                                pursuing PhD in IT, Shobha is working as Assistant Professor. She is fond of eating
-                                tasty food but finds it difficult to cook the same.</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="team-member">
-                            <img src="images/team/veesa.jpg" class="img-responsive img-circle" alt="">
-                            <h4>Veesa Norman</h4>
-                            <p class="text-muted">Mysterious hacker</p><!--add tagline in p-->
-                            <ul class="list-inline social-buttons">
-                                <li><a href="https://github.com/veesa"><i class="fa fa-github"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--/#clients-->
-<section id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="clients text-center wow fadeInUp col-lg-8 col-lg-offset-2 text-center" data-wow-duration="500ms"
-                 data-wow-delay="300ms">
-                <p><img src="images/home/clients.png" class="img-responsive" alt=""></p>
-                <h2 class="section-heading">Contribute</h2>
-                <hr class="primary">
-                <p>Ready to start contributing to PeARS? That's great!
-                We are very active on IRC and our discourse discussion
-                platform. Check out our <a href="contribute.html">contributors' page</a>, and drop us a post, or say 'Hi' to us over IRC!</p>
-            </div>
-            <div class="col-lg-4 col-lg-offset-2 text-center">
-                <i class="fa fa-comment fa-3x wow bounceIn"></i>
-                <p>IRC: #pears on <a href="http://webchat.freenode.net/">Freenode</a></p>
-            </div>
-            <div class="col-lg-4 text-center">
-                <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                <p><a href="http://lists.pearsearch.org">PeARS Discourse Discussions</a></p>
-            </div>
-        </div>
-    </div>
-</section>
-<br/><br/><br/>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/lightbox.min.js"></script>
-<script type="text/javascript" src="js/wow.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
-</body>
+  </body>
 </html>

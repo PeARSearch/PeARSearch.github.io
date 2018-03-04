@@ -1,0 +1,49 @@
+.Navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Navigation--Main {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.Navigation--Main li  {
+  color: #333333;
+  margin-bottom: 25px;
+}
+
+.Navigation--Main li a  {
+  color: inherit;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.Navigation--Main li a:hover  {
+  color: #1D90B1 !important;
+  text-decoration: underline;
+}
+
+.Navigation--Selected {
+  color: #1D90B1 !important;
+}
+
+.Navigation__Splitter {
+  border: 0;
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 20px;
+}
+
+.Navigation--Secondry {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.Navigation--Secondry li  {
+  margin-bottom: 15px;
+}
+
+.Navigation--Secondry li a  {
+  font-size: 14px;
+}

@@ -1,0 +1,44 @@
+.Team {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Member {
+  display: flex;
+  margin-bottom: 45px;
+}
+
+.Member:last-child  {
+  margin-bottom: 0;
+}
+
+.Member__Photo  {
+  width: 200px;
+  height: 200px;
+  margin-right: 30px;
+  flex-shrink: 0;
+}
+
+.Member__Content  {}
+
+.Member__Name {}
+
+.Member__Designation  {
+  font-size: 16px;
+  color: #808080;
+}
+
+.Member__Social {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.Member__Social a {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.Member__Bio  {
+  margin-top: 15px;
+}

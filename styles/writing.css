@@ -1,0 +1,29 @@
+.Writing  {
+  list-style: none;
+  padding: 0;
+}
+
+.Article  {
+  margin-bottom: 45px;
+}
+
+.Article:last-child {
+  margin-bottom: 0px;
+}
+
+.Article__Title {
+  margin-bottom: 5px;
+}
+
+.Article__Author  {
+  font-size: 14px;
+  color: #808080;
+  margin-bottom: 15px;
+}
+
+.Article__Date  {
+  font-style: italic;
+}
+
+.Article__ShortDescription  {
+}

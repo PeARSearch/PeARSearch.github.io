@@ -1,0 +1,83 @@
+.Pod_Row {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 45px;
+}
+
+.Pod_Row div {}
+
+.Instructions {
+  width: 900px;
+}
+
+.Instructions div {}
+
+.Theme  {
+  width: 220px;
+  height: 220px;
+  margin-right: 30px;
+  flex-shrink: 0;
+  position: relative;
+  border: solid 1px black;
+}
+
+.Theme p {
+  z-index: 100;
+  position: absolute;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  left: 15px;
+  top: 35px;
+}
+
+.Pod  {
+  width: 220px;
+  height: 220px;
+  margin-right: 30px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.Pod img  {
+  width: 220px;
+  height: 220px;
+}
+
+.Pod #brightness {
+filter: brightness(0.2);
+-webkit-filter: brightness(0.2);
+-moz-filter: brightness(0.2);
+-o-filter: brightness(0.2);
+-ms-filter: brightness(0.2);
+}
+
+.Pod #blur {
+filter: blur(2px);
+-webkit-filter: blur(2px);
+-moz-filter: blur(2px);
+-o-filter: blur(2px);
+-ms-filter: blur(2px);
+}
+
+.Pod a {
+  z-index: 100;
+  position: absolute;
+  color: #1D90B1;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  left: 15px;
+  top: 35px;
+}
+
+.Pod p {
+  z-index: 100;
+  position: absolute;
+  color: black;
+  font-size: 14px;
+  left: 15px;
+  top: 150px;
+}
+
