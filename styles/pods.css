@@ -81,3 +81,6 @@ filter: blur(2px);
   top: 150px;
 }
 
+td { 
+    padding: 5px;
+}
