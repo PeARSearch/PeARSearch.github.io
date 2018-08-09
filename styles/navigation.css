@@ -5,18 +5,19 @@
 }
 
 .Navigation--Main {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
 }
 
 .Navigation--Main li  {
   color: #333333;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .Navigation--Main li a  {
   color: inherit;
   text-decoration: none;
+  font-size: 16px;
 }
 
 .Navigation--Main li a:hover  {
@@ -41,4 +42,8 @@
 
 .Navigation--Secondry li  {
   margin-bottom: 15px;
+}
+
+.Navigation--Secondry li a  {
+  font-size: 14px;
 }

@@ -27,10 +27,14 @@
 
 .Image p {
   z-index: 100;
-  position: absolute;
-  color: black;
+  padding-right: 10px;
+  color: #808080;
   font-size: 14px;
-  left: 15px;
-  bottom: -30px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.Image p a {
+  font-size: 14px;
 }
 
