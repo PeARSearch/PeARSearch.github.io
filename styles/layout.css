@@ -1,16 +1,12 @@
 .Layout__Sidebar  {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 160px;
-  padding-top: 60px;
+  margin: 4% 4%;
   box-sizing: border-box;
   text-align: right;
 }
 
 .Layout__Content  {
-  width: 630px;
-  margin-left: 325px;
+  margin-left: 50px;
+  margin-right: 50px;
   padding: 60px 0;
   box-sizing: border-box;
 }
@@ -20,6 +16,16 @@
   margin-left: 325px;
   padding: 60px 0;
   box-sizing: border-box;
+}
+
+.HeaderTitle {
+  color: #d3d3d3;
+}
+
+.Header {
+  background-color: black;
+  padding: 50px;
+  margin-bottom: 20px;
 }
 
 .Gap--45 {

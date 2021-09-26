@@ -1,69 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Pod downloads | PeARS</title>
-  <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/website.css">
-  <link rel="shortcut icon" href="images/ico/favicon.ico">
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
-</head>
-<body>
-  <section class="Layout__Sidebar">
-    <img class="Logo" src="images/logo.svg" alt="Pearsearch logo"/>
-    <nav class="Navigation Navigation--Main">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="technology.html">What is PeARS?</a></li>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>The People's search engine | PeARS</title>
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <meta name="generator" content="Bootply"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500" rel="stylesheet" />
+    <link href="styles/website.css" rel="stylesheet" />
+    <link href="styles/image.css" rel="stylesheet" />
+
+
+  </head>
+  <body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a href="index.html" class="navbar-left"><img src="images/pears-only-small.png" height="50px"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="technology.html">What is PeARS?</a></li>
           <li><a href="philosophy.html">Philosophy</a></li>
-          <li><a href="posts.html">Writing</a></li>
-          <li><a href="contribute.html">Contribute</a></li>
-          <li><a href="faq.html">F.A.Q.</a></li>
+          <li><a href="posts.html">Blog</a></li>
           <li><a href="gallery.html">Gallery</a></li>
-          <li  class="Navigation--Selected"><a href="downloads.html">Downloads</a></li>
+          <li><a href="contribute.html">Contribute</a></li>
+        <li><a href="faq.html">F.A.Q.</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+      
+          
+      </ul>
+      
+    </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
     </nav>
-    <hr class="Navigation__Splitter"/>
-    <nav class="Navigation Navigation--Secondry">
-      <li><a href="https://github.com/PeARSearch/PeARS-orchard">Install from Github</a></li>
-    </nav>
-  </section>
-  <section class="Layout__Download">
-    <h1 class="PageTitle">Pod download page</h1>
 
-    <p class="Instructions">We are working on making various 'demo' pods available for your PeARS install. Please note that they are automatically created, so they may not be exactly what you might want them to be!<br><br>
 
-These pods can be installed directly from your pear, by going to your 'Pod management' page and clicking on 'Find a pod'. Alternatively, you can also click on the name of a pod down here, and save the associated CSV file. You can then index that file locally by going to your pear on localhost:8080 and choosing the 'index from file' option on your 'Pod management' page. Once you're done, you're ready to search!<br><br>
+  <div class="container-full">
+    <div class="row">
+        <section class="Header">
+        <h1 class="HeaderTitle">An index of the World Wide Web</h1>
 
-Remember, when you search, that those are very small indices. You may not find what you're looking for, because it's simply not indexed! If you get frustrated, join us in our <a href="writings/We-will-snow-web-indexing.html">indexing campaign</a>!
-</p><br><br>
- 
-    <div class="Pod_Row">
-         <div class="Theme"><p>Entertainment</p></div>
-         <div class="Pod"><img src="images/example_snow_pod.png" /><a href="static/pods/star_wars_urls_db.csv">Star Wars</a><p>792 pages about <br>the Star Wars universe</p></div>
-         <div class="Pod"><img src="images/example_snow_pod.png" /><a href="static/pods/harry_potter_urls_db.csv">Harry Potter</a><p>593 pages about <br>Harry Potter (books and films!)</p></div>
-         <div class="Pod"><img src="images/example_snow_pod.png" /><a href="static/pods/black_panther_film_urls_db.csv">Black Panther</a><p>340 pages about <br>the latest Ryan Coogler film</p></div>
-    </div>  
-    <div class="Pod_Row">
-         <div class="Theme"><p>Politics and society</p></div>
-         <div class="Pod"><img src="images/example_snow_pod.png" /><a href="static/pods/brexit_urls_db.csv">Brexit</a><p>624 pages about <br>the Brexit process</p></div>
-         <div class="Pod"><img src="images/example_snow_pod.png" /><a href="static/pods/anarchism_urls_db.csv">Anarchism</a><p>1175 pages about <br>anarchist movements</p></div>
-         <div class="Pod"><img src="images/example_snow_pod.png" /><a href="static/pods/blackpanthers_urls_db.csv">The<br>Black Panthers</a><p>506 pages about <br>the political organisation founded in 1966</p></div>
-    </div>  
-    <div class="Pod_Row">
-         <div class="Theme"><p>Science and culture</p></div>
-         <div class="Pod"><img src="images/example_snow_pod.png" /><a href="static/pods/AI_urls_db.csv">AI</a><p>359 pages about <br>AI and its relation to society</p></div>
-         <div class="Pod"><img src="images/example_snow_pod.png" /><a href="static/pods/string_theory_urls_db.csv">String theory</a><p>307 pages about <br>string theory</p></div>
-         <div class="Pod"><img src="images/example_snow_pod.png" /><a href="static/pods/opera_urls_db.csv">Opera</a><p>258 pages about <br>opera</p></div>
-    </div>  
-    <div class="Pod_Row">
-         <div class="Theme"><p>Health</p></div>
-         <div class="Pod"><img src="images/example_snow_pod.png" /><a href="static/pods/backpain_urls_db.csv">Back pain</a><p>373 pages for <br>back pain sufferers</p></div>
-         <div class="Pod"><img src="images/example_snow_pod.png" /><a href="static/pods/stress_urls_db.csv">Stress</a><p>622 pages about <br>stress</p></div>
-         <div class="Pod"><img src="images/example_snow_pod.png" /><a href="static/pods/family_planning_db.csv">Family planning</a><p>1545 pages about <br>planning or not planning children</p></div>
-    </div>  
+        <div><img src="./images/map.jpg" width="30%" alt="Photo by Nastya Dulhiier on Unsplash, https://unsplash.com/photos/OKOOGO578eo." title="Photo by Nastya Dulhiier on Unsplash, https://unsplash.com/photos/OKOOGO578eo."/></div><br>
+        <br><br>
+        </section>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-8">
+      <section class="Layout__Content">
+
+      <p>We are working on making various 'demo' pods available for your PeARS install, based on <a href="blog/A-map-of-the-Web.html">the 'topical map' of the Web</a> we are currently developing. You will be able to install those pods directly from your pear, by going to your 'Pod management' page and clicking on 'Find a pod'.  </p><br><br>
+
+     <!--  <p>Alternatively, you can also click on the name of a pod down here, and save the associated index. You can then index that file locally by going to your pear on localhost:8080 and choosing the 'index from file' option on your 'Pod management' page. Once you're done, you're ready to search!</p><br><br>-->
 
   </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <script src="./scripts/bootstrap.min.js"></script>
 </body>
 </html>

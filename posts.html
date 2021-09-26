@@ -1,75 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Blog | PeARS</title>
-  <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/website.css">
-  <link rel="shortcut icon" href="images/ico/favicon.ico">
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
-</head>
-<body>
-  <section class="Layout__Sidebar">
-    <img class="Logo" src="images/logo.svg" alt="Pearsearch logo"/>
-    <nav class="Navigation Navigation--Main">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="technology.html">What is PeARS?</a></li>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>The People's search engine | PeARS</title>
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <meta name="generator" content="Bootply"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500" rel="stylesheet" />
+    <link href="styles/website.css" rel="stylesheet" />
+    <link href="styles/image.css" rel="stylesheet" />
+
+
+  </head>
+  <body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a href="index.html" class="navbar-left"><img src="images/pears-only-small.png" height="50px"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="technology.html">What is PeARS?</a></li>
           <li><a href="philosophy.html">Philosophy</a></li>
-          <li class="Navigation--Selected"><a href="posts.html">Writing</a></li>
-          <li><a href="contribute.html">Contribute</a></li>
-          <li><a href="faq.html">F.A.Q.</a></li>
+          <li><a href="posts.html">Blog</a></li>
           <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="downloads.html">Downloads</a></li>
+          <li><a href="contribute.html">Contribute</a></li>
+        <li><a href="faq.html">F.A.Q.</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+      
+          
+      </ul>
+      
+    </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
     </nav>
-    <hr class="Navigation__Splitter"/>
-    <nav class="Navigation Navigation--Secondry">
-      <li><a href="https://github.com/PeARSearch/PeARS-orchard">Install from Github</a></li>
-    </nav>
-  </section>
+
+
+  <div class="container-full">
+    <div class="row">
+      <div class="col-md-8">
+
   <section class="Layout__Content">
     <h1 class="PageTitle">Posts</h1>
         <section>
           <ol class="Writing">
 
             <li class="Article">
-              <a href="writings/Indexing-Firefox-bookmarks.html">
+              <a href="blog/A-map-of-the-Web.html">
+                <h3 class="Article__Title">A map of the Web</h3>
+              </a>
+              <p class="Article__Author">
+                by Aurelie Herbelot
+                <span class="Article__Date">on 25 September2021</span>
+              </p>
+              <p class="Article__ShortDescription"><p></p><hr>
+            </li>   
+
+            <li class="Article">
+              <a href="blog/First-results-from-the-Fruit-Fly-Algorithm.html">
+                <h3 class="Article__Title">First baseline results from the Fruit Fly Algorithm</h3>
+              </a>
+              <p class="Article__Author">
+                by Aurelie Herbelot
+                <span class="Article__Date">on 19 August 2021</span>
+              </p>
+              <p class="Article__ShortDescription"><p>First results are out! How does the Fruit Fly Algorithm perform on document classification?</p><hr>
+            </li>   
+
+            <li class="Article">
+              <a href="blog/An-introduction-to-the-fruit-fly-algorithm.html">
+                <h3 class="Article__Title">An introduction to the fruit fly algorithm</h3>
+              </a>
+              <p class="Article__Author">
+                by Aurelie Herbelot
+                <span class="Article__Date">on 1 June 2021</span>
+              </p>
+              <p class="Article__ShortDescription"><p>Our new project, codename Fruit Fly, is investigating a state-of-the-art algorithm derived from a biological model to bring Web indexing to the masses.</p><hr>
+            </li>
+         
+            <li class="Article">
+              <a href="blog/PeARS-recipient-NLNet-award.html">
+                <h3 class="Article__Title">PeARS: recipient of an NLNet award</h3>
+              </a>
+              <p class="Article__Author">
+                by Aurelie Herbelot
+                <span class="Article__Date">on 2 May 2021</span>
+              </p>
+              <p class="Article__ShortDescription"><p>We are very grateful to the <a href="" target="_blank" title="Link to NLnet foundation. The link opens on a new tab">NLnet foundation</a> for their award designed to our new PeARS project, codename Fruit Fly. The award will allow us to support two research assistants on the project.</p><hr>
+            </li>
+
+
+            <li class="Article">
+              <a href="blog/Indexing-Firefox-bookmarks.html">
                 <h3 class="Article__Title">How to create a PeARS pod from your Firefox bookmarks</h3>
               </a>
               <p class="Article__Author">
                 by Aurelie Herbelot
                 <span class="Article__Date">on 2 Aug 2018</span>
               </p>
-              <p class="Article__ShortDescription"><p>Follow tutorial on using PeARS to index your Firefox bookmarks and share the resulting pod with your friends.</p>
+              <p class="Article__ShortDescription"><p>Follow tutorial on using PeARS to index your Firefox bookmarks and share the resulting pod with your friends.</p><hr>
             </li>
 
 
             <li class="Article">
-              <a href="writings/Which-web-indexer-are-you.html">
+              <a href="blog/Which-web-indexer-are-you.html">
                 <h3 class="Article__Title">Which Web indexer are you?</h3>
               </a>
               <p class="Article__Author">
                 by Aurelie Herbelot
                 <span class="Article__Date">on 11 Feb 2018</span>
               </p>
-              <p class="Article__ShortDescription"><p>There are many reasons to use PeARS and start indexing the Web. But what is yours? Read our profiles, and discover which Web indexer <i>you</i> are!</p>
+              <p class="Article__ShortDescription"><p>There are many reasons to use PeARS and start indexing the Web. But what is yours? Read our profiles, and discover which Web indexer <i>you</i> are!</p><hr>
             </li>
 
             <li class="Article">
-              <a href="writings/We-will-snow-web-indexing.html">
+              <a href="blog/We-will-snow-web-indexing.html">
                 <h3 class="Article__Title">'We will snow': the web indexing campaign</h3>
               </a>
               <p class="Article__Author">
                 by Aurelie Herbelot
                 <span class="Article__Date">on 9 Feb 2018</span>
               </p>
-              <p class="Article__ShortDescription"><p>Announcing phase 1 of PeARS, codename 'Orchard': a decentralised Web search system allowing people to easily <i>index</i> their favourite web pages (i.e. produce a computer-readable, searchable representation of the pages' content). Its main feature is the ability to convert a small index into a greyish, unassuming picture, called a 'snow pod'. Snow pods are the mini-weapons of the indexing revolution: infinitely shareable, combineable, the building blocks of the people's Internet.</p>
+              <p class="Article__ShortDescription"><p>Announcing phase 1 of PeARS, codename 'Orchard': a decentralised Web search system allowing people to easily <i>index</i> their favourite web pages (i.e. produce a computer-readable, searchable representation of the pages' content). Its main feature is the ability to convert a small index into a greyish, unassuming picture, called a 'snow pod'. Snow pods are the mini-weapons of the indexing revolution: infinitely shareable, combineable, the building blocks of the people's Internet.</p><hr>
             </li>
 
             <li class="Article">
-                <a href="writings/PeARS-in-Cambridge.html">
+                <a href="blog/PeARS-in-Cambridge.html">
                   <h3 class="Article__Title">PeARS in Cambridge</h3>
                 </a>
 
@@ -79,11 +150,11 @@
               </p>
               <p class="Article__ShortDescription">
               Some members of PeARS team <i>(Nandaja, Hrishi, Behrang and Aurelie)</i> met in Cambridge <i>(7-11 Nov. 2016)</i> for a week of coding, workshop-ing, eating and getting rained on. Mayalayam semantic space created. Lots of hairdryer hacking. Lots of chai pe charcha.
-              </p>
+              </p><hr>
             </li>
 
             <li class="Article">
-              <a href="writings/PeARS-recipient-Mozilla-MOSS-Award.html">
+              <a href="blog/PeARS-recipient-Mozilla-MOSS-Award.html">
                 <h3 class="Article__Title">PeARS: recipient of a Mozilla MOSS Award</h3>
               </a>
 
@@ -92,7 +163,7 @@
                 <span class="Article__Date">on 03 Nov 2016</span>
               </p>
               <p class="Article__ShortDescription">PeARS team is very excited to have been chosen as one of eight recipients of a MOSS "mission partners" award. We congratulate the other grantees who all have exciting projects, from anonymity preservation to game engines and screen readers for the visually impaired!
-              </p>
+              </p><hr>
             </li>
           </ol>
         </section>
@@ -103,23 +174,8 @@
           <li class="Splitter__Square Splitter__Square--small"></li>
         </ul>
 
-        <section>
-          <h2>Ready to start contributing to PeARS?</h2>
-          <p>That's great! We are very active on IRC and our discourse discussion platform. Check out our <a href="contribute.html">contributors' page</a>, and drop us a post, or say 'Hi' to us over IRC!</p>
-          <ul class="Footer__Links">
-            <li>
-              <a href="http://webchat.freenode.net/" target="_blank">
-                <h3>IRC: #pears on Freenode</h3>
-              </a>
-            </li>
-            <li>
-              <a href="http://lists.pearsearch.org/" target="_blank">
-                <h3>PeARS Discourse Discussion</h3>
-              </a>
-            </li>
-          </ul>
-        </section>
-      </section>
   <script type="text/javascript" src="scripts/contribute.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <script src="./scripts/bootstrap.min.js"></script>
 </body>
 </html>
