@@ -76,7 +76,7 @@
 
 <div align="center">
 <img src="https://render.githubusercontent.com/render/math?math=\text{fitness(fly)} = 1/3 \times \text{sum(val_score(WoS, Wikipedia, 20newsgroup dataset)})">
-</div>
+</div><br>
 
 <p>In order to keep the KC layer as small as possible, we implement a strategy where the first generation of flies only contains a reduced number of projections (10-100), and subsequent generations grow in size, with new offsprings adding 10 to 30 more projections to the set they received from their parents. This allows us to monitor the effect of size on accuracy.</p>
 
@@ -91,7 +91,7 @@
 <li> Crossover function (apply to two parents): firstly, we select the matrix with more rows, and randomly delete rows until the two matrices have the same number of rows. Secondly, we vertically chunk the two matrices and cross-merge them. Finally, the two new matrices are new offspring to add to the later generation.
 
 <li> Mutation function (only need one individual): we randomly select some rows, and randomly re-generate the projections for those rows. The number row to be selected is controlled by a hyper-parameter.
-</li>
+</ul>
 
      <p>The <b>WTA</b> is a float number. Again, two operations apply to the WTA during evolutionn:</p>
 
@@ -113,7 +113,7 @@
 
 <p>Starting from a small population of 10, the GA shows early positive impact on our three datasets, as demonstrated by the graph below.</p>
 
-<img src="https://github.com/PeARSearch/PeARSearch.github.io/blob/master/images/GA-results.png"/>
+<img src="https://pearsproject.org/images/GA-results.png"/>
 
 <p>The graph shows the mean accuracy of each generation on the validation set of each dataset, as training progresses. As we can see, accuracy on the three datasets improves sharply in the first 100 generations and flattens afterwards. Notably, accuracy continues to increase but at a much smaller rate. This is important from the point of view of storage and efficiency: the flies in the last generations have increased in size compared to their ancestor, so there is a trade-off between the amount of extra accuracy bought by new genetic material. We can use the learning curve of our flies to decide on a good compromise between accuracy and efficiency.</p>
 
