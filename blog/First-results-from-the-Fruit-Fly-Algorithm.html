@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>The People's search engine | PeARS</title>
+    <link rel="shortcut icon" href="../images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../images/ico/apple-touch-icon-57-precomposed.png">
+    <meta name="generator" content="Bootply"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="../styles/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500" rel="stylesheet" />
+    <link href="../styles/website.css" rel="stylesheet" />
+    <link href="../styles/image.css" rel="stylesheet" />
+
+
+  </head>
+  <body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a href="../index.html" class="navbar-left"><img src="../images/pears-only-small.png" height="50px"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="../technology.html">What is PeARS?</a></li>
+          <li><a href="../philosophy.html">Philosophy</a></li>
+          <li><a href="../posts.html">Blog</a></li>
+          <li><a href="../gallery.html">Gallery</a></li>
+          <li><a href="../contribute.html">Contribute</a></li>
+        <li><a href="../faq.html">F.A.Q.</a></li>
+        <li><a href="../downloads.html">Downloads</a></li>
+      </ul>
+      
+    </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+    </nav>
+
+
+  <div class="container-full">
+    <div class="row">
+    <div class="col-md-8">
+
+    <section class="Layout__Content Article">
+
+  <h1 class="PageTitle">First baseline results from the Fruit Fly Algorithm</h1>
+
+  <p>PeARS team has been hard at work, evaluating a biological algorithm for Web document classification (<a href="An-introduction-to-the-fruit-fly-algorithm.html">read more about the project here</a>). If experimental results are positive, the so-called 'Fruit Fly Agorithm' will be integrated into the PeARS framework, making the system even more lightweight and efficient, both in terms of storage and performance.</p>
+
+  <p>And... initial results are out! On this page, we report on the performance of the FFA 'out of the box'. Evaluation takes place over a document classification task, which assesses whether our document vectors are of sufficient quality to be accurately categorised into different topics.</p>
+
+
+
+  <h2>Evaluation datasets</h2>
+
+  <p>We are using two standard datasets for document classification, <i>20_newsgroups</i> and <i>Web of Science</i> (links below). We also built our own dataset from Wikipedia pages linked to categories.</p>
+
+<ul>
+  <li> <a href="http://qwone.com/~jason/20Newsgroups/">20newsgroup</a>: we are using <a href="http://qwone.com/~jason/20Newsgroups/20news-bydate.tar.gz">http://qwone.com/~jason/20Newsgroups/20news-bydate.tar.gz</a>, which has around 18000 documents in 20 classes.
+  <li> <a href="https://data.mendeley.com/datasets/9rw3vkcfy4/6">Web of Science</a>: we are using the medium-size version of the dataset, which has 11967 documents devided into 35 classes.
+  <li> <a href="https://github.com/PeARSearch/PeARS-fruit-fly/blob/main/datasets/create_Wiki_dataset.ipynb">Wikipedia</a>: 30000 documents in 15 classes.
+</ul>
+
+  <h2>The model</h2>
+
+  <p>Our aim is to evaluate the FFA's ability to generate good document vectors. Each document in the three above datasets is passed as input to the FFA, and hashed. The hashes are then used to classify documents, using a multiclass logistic regression classifier (we use the sklearn implementation, available <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html">here</a>.)</p>
+
+  <h2>Hyperparameter tuning</h2>
+
+  <p>We tune the fruit fly model and classifier concurrently, using <a href="https://github.com/fmfn/BayesianOptimization">Bayesian Optimization</a>. We show below the range of values considered for each hyperparameter.</p>
+
+  <h3>Model hyperparameters</h3>
+
+  <ul>
+  <li>Number of Kenyon Cells (Number KC): 3000-9000
+  <li>Size of random projections (Proj. size): 2-10
+  <li>Percentage of KCs to retain in the final hash (WTA): 2-20
+  <li>Number of keywords from document (Num. top words): 10-250
+  </ul>
+
+  <h3>Classification hyperparameters</h3>
+
+  <ul>
+  <li>C: 1-100
+  <li>Max. iterations: set at 2000 for 20newsgroups dataset, 50 for the other two datasets
+  </ul>
+
+
+  <h2>Results</h2>
+
+  <p>We first report below our results on the validation data, showing the 5 best sets of hyperparameters for each dataset.</p>
+
+   <h3>20_newsgroups dataset</h3>
+
+<table class="table">
+<thead>
+<tr><th>Score</th><th>Number KC</th><th>Proj. size</th><th>Num. top words</th><th>WTA</th><th>C parameter</th></tr>
+</thead>
+<tr><td>0.7043</td><td>8730</td><td>7</td><td>223</td><td>20</td><td>23</td></tr>
+<tr><td>0.7039</td><td>8739</td><td>4</td><td>248</td><td>14</td><td>98</td></tr>
+<tr><td>0.7039</td><td>8559</td><td>7</td><td>241</td><td>14</td><td>5</td></tr>
+<tr><td>0.7038</td><td>8638</td><td>7</td><td>241</td><td>11</td><td>93</td></tr>
+<tr><td>0.7035</td><td>8960</td><td>6</td><td>247</td><td>19</td><td>98</td></tr>
+</table>
+
+  <p>The average score for the 5 settings above on the test set is: 0.8021</p>
+
+
+
+  <h3>Web of Science dataset</h3>
+
+<table class="table">
+<thead>
+<tr><th>Score</th><th>Number KC</th><th>Proj. size</th><th>Num. top words</th><th>WTA</th><th>C parameter</th></tr>
+</thead>
+<tr><td>0.7712</td><td>8834</td><td>10</td><td>242</td><td>15</td><td>93</td></tr>
+<tr><td>0.7707</td><td>8662</td><td>8</td><td>244</td><td>19</td><td>49</td></tr>
+<tr><td>0.7700</td><td>8891</td><td>5</td><td>250</td><td>18</td><td>4</td></tr>
+<tr><td>0.7700</td><td>8409</td><td>5</td><td>247</td><td>16</td><td>98</td></tr>
+<tr><td>0.7699</td><td>8015</td><td>9</td><td>171</td><td>8</td><td>69</td></tr>
+</table>
+
+  <p>The average score for the 5 settings above on the test set is: 0.7833</p>
+
+
+
+  <h3>Wikipedia dataset</h3>
+
+<table class="table">
+<thead>
+<tr><th>Score</th><th>Number KC</th><th>Proj. size</th><th>Num. top words</th><th>WTA</th><th>C parameter</th></tr>
+</thead>
+<tr><td>0.9186</td><td>8271</td><td>6</td><td>241</td><td>19</td><td>40</td></tr>
+<tr><td>0.9179</td><td>8604</td><td>8</td><td>204</td><td>18</td><td>35</td></tr>
+<tr><td>0.9178</td><td>8808</td><td>5</td><td>240</td><td>11</td><td>83</td></tr>
+<tr><td>0.9172</td><td>8786</td><td>5</td><td>243</td><td>16</td><td>100</td></tr>
+<tr><td>0.9171</td><td>8995</td><td>9</td><td>249</td><td>10</td><td>80</td></tr>
+</table>
+
+  <p>The average score for the 5 settings above on the test set is: 0.9179</p>
+
+
+  <h2>Discussion</h2>
+
+  <p>The fruit fly gives very decent performance 'out-of-the-box' (its performance is in fact at state-of-the-art level on the 20newsgroup dataset: compare with results given in <a href="https://arxiv.org/pdf/2101.06887">this page</a>, using a heavier architecture). Nevertheless, we expect it can be improved both in terms of raw performance and/or size of the model, and this is what the next steps of the project will investigate.</p>
+
+  <ul class="Splitter">
+    <li class="Splitter__Square Splitter__Square--small"></li>
+    <li class="Splitter__Square Splitter__Square--big"></li>
+    <li class="Splitter__Square Splitter__Square--small"></li>
+  </ul>
+
+     </section>
+    </div>
+    </div>
+  </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <script src="./scripts/bootstrap.min.js"></script>
+
+</html>
+
+
+
+
+
