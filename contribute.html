@@ -36,11 +36,14 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="technology.html">What is PeARS?</a></li>
-        <li><a href="install.html">Install</a></li>
-        <li><a href="philosophy.html">Philosophy</a></li>
-        <li><a href="contribute.html">Contribute</a></li>
-        <li><a href="posts.html">Blog</a></li>
+          <li><a href="philosophy.html">Philosophy</a></li>
+          <li><a href="posts.html">Blog</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contribute.html">Contribute</a></li>
         <li><a href="faq.html">F.A.Q.</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+      
+          
       </ul>
       
     </div><!-- /.navbar-collapse -->
@@ -54,26 +57,82 @@
   <section class="Layout__Content">
     <h1 class="PageTitle">Help the team</h1>
 
+    <div><img src="images/team/team-grayscale.png" width="600px"/></div><br><br>
 
     <h2>Step 1: Setting up the PeARS environment</h2>
-    <p>Check out the <a href="install.html">installation instructions</a> to set PeARS up on your local machine.</p>
+    <p>First, the best way to get acquainted with the current state of the project is to install the development version. Please follow the instructions here to set things up</p>
+    <div id="#instruction-set" class="InstructionSet">
+      <div class="InstructionSet__Header">
+        <p class="InstructionSet__Title">Click to expand Instruction set</p>
+        <i class="Icon__ArrowDown"></i>
+      </div>
+      <div class="InstructionSet__Content hide">
+        <ol class="InstructionSet__List InstructionSet__List--Main">
+          <li class="InstructionSet__ListItem">
+            <h3>1. Clone PeARS repo</h3>
+            <pre>git clone https://github.com/PeARSearch/PeARS-orchard.git</pre>
+            <pre>cd PeARS-orchard</pre>
+          </li>
+          <li class="InstructionSet__ListItem">
+            <h3>2. Setting up the environment</h3>
+            <ol class="InstructionSet__List InstructionSet__List--Sub">
+              <li class="InstructionSet__ListItem">
+                <h4>2.1. Set up virtualenv</h4>
+                <p>We recommend using virtualenv for the development. If you are just here for test it out, skip to the next section.</p>
+                <h5>Install pip3 using easy_install</h5>
+                <pre>sudo easy_install pip3</pre>
+                <p>or some other way your distribution supports like:</p>
+                <pre>sudo yum install python3-pip</pre>
+                <h5>Install virtualenv using pip3</h5>
+                <pre>sudo pip3 install virtualenv</pre>
+                <h5>Create a new virtualenv for PeARS and activate it</h5>
+                <pre>virtualenv -p python3 env && source env/bin/activate</pre>
+              </li>
+              <li class="InstructionSet__ListItem">
+                <h4>2.2. Install the build dependencies</h4>
+                <p>We recommend using pip for installation. In case you don't have this, look inside requirements.txt and install dependencies manually.</p>
+                <pre>pip3 install -r requirements.txt</pre>
+              </li>
+              <li class="InstructionSet__ListItem">
+                <h4>2.3. Unpack the semantic space</h4>
+                <p>In the root directory of the repo, run</p>
+                <pre>cd app/static/spaces</pre>
+                <p>then</p>
+                <pre>english.dm.zip</pre>
+              </li>
+            </ol>
+          </li>
+          <li class="InstructionSet__ListItem">
+            <h3>3. Running the PeARS search engine</h3>
+            <p>In the root directory of the repo, run</p>
+            <pre>python3 run.py</pre>
+            <p>Go to the browser and type localhost:8080. You should find PeARS running there. You don't have any pages indexed yet, so go to the F.A.Q. page (link at the top of the page) and follow the short instructions to get you going!</i></p>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <p>Do let us know is anything isn't working for you by opening an issue on the GitHub page!</p>
 
     <h2 class="Gap--45">Step 2: Check for open issues</h2>
-    <p> Check out the current issues in the PeARS repo. You may find something you might like to contribute to. Things are changing quite rapidly, so it is always best to drop us a short line saying you'd like to take on the issue before you actually make a start.</p>
+    <p> Check out the current issues in the PeARS repo. You may find something you might like to contribute to. Things are changing quite rapidly, so it is always best to drop us a short line saying you'd like to take on the issue before you actually make a start. We may have more up-to-date info than what is on GitHub!</p>
     <ol class="Issues">
       <li class="Issue">
         <img class="Issue__Icon" src="images/github-blue.svg"/>
         <div class="Issue__Content">
-          <a href="https://github.com/PeARSearch/PeARS-orchard/issues">
-            <h3>PeARSearch/PeARS-orchard/issues</h3>
+          <a href="#">
+            <h3>PeARSearch/PeARS-orchard</h3>
           </a>
+          <p class="Issue__Count">Open Issues:
+            <span class="Issue__CountValue" id="PeARS-orchard">
+              <img src="images/spinner.gif"/>
+            </span>
           </p>
         </div>
       </li>
     </ol>
 
     <h2 class="Gap--45">Step 3: Connect with the Team</h2>
-    <p>if you have other ideas, comments, problems, don't hesitate to contact us, either on the GitHub issue page, or on <a href="https://discord.gg/fcxEywrHKu">our Discord</a>.</p><br><br>
+    <p>if you have other ideas, comments, problems, don't hesitate to contact us, either on the GitHub issue page, or via IRC. One of us is usually hanging about at #pears on Freenode.</p><br><br>
 
     <section>
     <ul class="Team">
@@ -92,7 +151,25 @@
               Github
             </a>
           </span>
-          <p class="Member__Bio">Aurelie has 15+ years experience in research. Her area of expertise is computational semantics, with a strong focus on building cognitively-inspired, energy-efficient systems. She holds a PhD in Computer Science from the University of Cambridge.</p>
+          <p class="Member__Bio">Having worked as a fluffy toy seller, a mortgage adviser and random other things, Aurelie decided that her real vocation was, in fact, computational semantics. In 2010, she received her PhD in Natural Language Processing from the Computer Laboratory at the University of Cambridge and has been working in research since then. Her work focuses on building computer systems which simulate human language understanding.</p>
+        </div>
+      </li>
+      <li class="Member">
+        <img class="Member__Photo" src="images/team/behrang-grayscale.png" alt="photo of Aurelie Herbelot"/>
+        <div class="Member__Content">
+          <h3 class="Member__Name">Behrang QasemiZadeh</h3>
+          <p class="Member__Designation">Computer Scientist</p>
+          <span class="Member__Social">
+            <a href="http://pars.ie/about" target="_blank">
+              Website
+            </a>
+          </span>
+          <span class="Member__Social">
+            <a href="https://github.com/languagerecipes/" target="_blank">
+              Github
+            </a>
+          </span>
+          <p class="Member__Bio">Behrang is a cliché computer scientist! Currently part of a team of linguists, philosophers, and neurocognitive scientists trying to describe a Barsalou-ian uniform structure of representations. His role is to design and write algorithms to simulate or to provide evidence of theoretical findings. This often involves exploring empirical data-driven distributional methods of natural language processing. One of Behrang’s hobbies is also programming! Other than that, he likes playing with his daughter and watching how she picks up the three languages spoken at home.</p>
         </div>
       </li>
       <li class="Member">
@@ -138,41 +215,30 @@
         </div>
       </li>
       <li class="Member">
-        <img class="Member__Photo" src="images/team/tanise.png" alt="photo of Tanise Pagnan Ceron"/>
+        <img class="Member__Photo" src="images/team/shobha-grayscale.png" alt="photo of Aurelie Herbelot"/>
         <div class="Member__Content">
-          <h3 class="Member__Name">Tanise Pagnan Ceron</h3>
-	  <p class="Member__Designation">PhD Student</p>
+          <h3 class="Member__Name">Shobha Tyagi</h3>
+          <p class="Member__Designation">PhD Student</p>
           <span class="Member__Social">
-            <a href="https://www.linkedin.com/in/taniseceron/" target="_blank">
-              LinkedIn
-            </a>
-          </span>
-          <span class="Member__Social">
-            <a href="https://github.com/tceron" target="_blank">
+            <a href="https://github.com/curiousDTU" target="_blank">
               Github
             </a>
           </span>
-          <p class="Member__Bio">
-	  Besides being overenthusiastic about way too many things/topics (e.g. eating, cooking, eating, biking, reading, data protection, and democratization of AI), Tanise is also pursuing her PhD on computational linguistics/computational social science and is mainly interested in developing methods to analyze societal discourse computationally.
-	  </p>
+          <p class="Member__Bio">Nature lover, learner, GNOME foundation documentation team member, pursuing PhD in IT, Shobha is working as Assistant Professor. She is fond of eating tasty food but finds it difficult to cook the same.</p>
         </div>
       </li>
       <li class="Member">
-        <img class="Member__Photo" src="images/team/nhut.png" alt="photo of Nhut Truong"/>
+        <img class="Member__Photo" src="images/team/veesa-grayscale.png" alt="photo of Aurelie Herbelot"/>
         <div class="Member__Content">
-          <h3 class="Member__Name">Nhut Truong</h3>
-          <p class="Member__Designation">PhD Student</p>
+          <h3 class="Member__Name">Veesa Norman</h3>
+          <p class="Member__Designation">Mysterious Hacker</p>
           <span class="Member__Social">
-            <a href="https://github.com/tlmnhut" target="_blank">
+            <a href="https://github.com/veesa" target="_blank">
               Github
             </a>
           </span>
-          <p class="Member__Bio">
-	  Nhut Truong is pursuing a doctoral degree in Brain and Cognitive sciences. He wishes one day PeARS, or the spirit of PeARS, will become the Linux of web search engines.
-          </p>
         </div>
       </li>
-
     </ul>
     </section>
 
