@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>The People's search engine | PeARS</title>
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <meta name="generator" content="Bootply"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500" rel="stylesheet" />
+    <link href="styles/website.css" rel="stylesheet" />
+    <link href="styles/image.css" rel="stylesheet" />
+
+
+  </head>
+  <body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a href="index.html" class="navbar-left"><img src="images/pears-only-small.png" height="50px"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="technology.html">What is PeARS?</a></li>
+        <li><a href="install.html">Install</a></li>
+        <li><a href="philosophy.html">Philosophy</a></li>
+        <li><a href="contribute.html">Contribute</a></li>
+        <li><a href="posts.html">Blog</a></li>
+        <li><a href="faq.html">F.A.Q.</a></li>
+      </ul>
+      
+    </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+    </nav>
+
+
+  <div class="container-full">
+    <div class="row">
+      <div class="col-md-8">
+  <section class="Layout__Content">
+    <h1 class="PageTitle">Installing PeARS</h1>
+
+
+    <h2>Setting up the PeARS environment</h2>
+    <p>The best way to get acquainted with the current state of the project is to install the development version. Please follow the instructions here to set things up</p>
+    <div id="#instruction-set" class="InstructionSet">
+      <div class="InstructionSet__Header">
+        <p class="InstructionSet__Title">Click to expand Instruction set</p>
+        <i class="Icon__ArrowDown"></i>
+      </div>
+      <div class="InstructionSet__Content hide">
+        <ol class="InstructionSet__List InstructionSet__List--Main">
+          <li class="InstructionSet__ListItem">
+            <h3>1. Clone PeARS repo</h3>
+            <pre>git clone https://github.com/PeARSearch/PeARS-orchard.git</pre>
+            <pre>cd PeARS-orchard</pre>
+          </li>
+          <li class="InstructionSet__ListItem">
+            <h3>2. Setting up the environment</h3>
+            <ol class="InstructionSet__List InstructionSet__List--Sub">
+              <li class="InstructionSet__ListItem">
+                <h4>2.1. Set up virtualenv</h4>
+                <p>We recommend using virtualenv for the development. If you are just here for test it out, skip to the next section.</p>
+                <h5>Install pip3</h5>
+                <pre>sudo apt update</pre>
+                <pre>sudo apt install python3-setuptools</pre>
+                <pre>sudo apt install python3-pip</pre>
+                <p>(or some other way your distribution supports).</p>
+                <h5>Install virtualenv using pip</h5>
+                <pre>sudo pip3 install virtualenv</pre>
+                <h5>Create a new virtualenv for PeARS and activate it</h5>
+                <pre>virtualenv -p python3 env && source env/bin/activate</pre>
+              </li>
+              <li class="InstructionSet__ListItem">
+                <h4>2.2. Install the build dependencies</h4>
+                <p>We recommend using pip for installation. In case you don't have this, look inside requirements.txt and install dependencies manually.</p>
+                <pre>pip3 install -r requirements.txt</pre>
+              </li>
+            </ol>
+          </li>
+          <li class="InstructionSet__ListItem">
+            <h3>3. Running the PeARS search engine</h3>
+            <p>In the root directory of the repo, run</p>
+            <pre>python3 run.py</pre>
+            <p>Go to the browser and type localhost:8080. You should find PeARS running there. You don't have any pages indexed yet, so go to the F.A.Q. page (link at the top of the page) and follow the short instructions to get you going!</i></p>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <p>Do let us know is anything isn't working for you by opening an issue on the GitHub page!</p>
+
+
+    <ul class="Splitter">
+      <li class="Splitter__Square Splitter__Square--small"></li>
+      <li class="Splitter__Square Splitter__Square--big"></li>
+      <li class="Splitter__Square Splitter__Square--small"></li>
+    </ul>
+
+
+
+  </section>
+  <script type="text/javascript" src="scripts/contribute.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <script src="./scripts/bootstrap.min.js"></script>
+</body>
+</html>
