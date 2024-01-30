@@ -14,8 +14,8 @@
 }
 
 .Member__Photo  {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   margin-right: 30px;
   flex-shrink: 0;
 }
