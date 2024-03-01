@@ -1,0 +1,18 @@
+main:
+  - name: "Team"
+    url: "/team/"
+    weight: 3
+  - name: "About"
+    url: "/about/"
+    weight: 2
+  - name: "Contact"
+    url: "/contact/"
+    weight: 5
+
+footer:
+  - name: "Home"
+    url: "/"
+    weight: 1
+  - name: "Privacy Policy"
+    url: "/privacy/"
+    weight: 2

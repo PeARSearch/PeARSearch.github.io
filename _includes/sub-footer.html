@@ -1,0 +1,24 @@
+<div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          {% if site.data.social %}
+            {% include social.html %}
+          <ul>
+            {% assign footermenu = site.data.menus.footer | sort: 'weight'  %}
+            {% for item in footermenu %}
+            <li class="{% if item.url == page.url %}active{% endif %}">
+              <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+          {% if site.data.seo.copyright_text %}
+          <div class="copyright">{{ site.data.seo.copyright_text }}</div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

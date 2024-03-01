@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Github",
+    "link": "https://github.com/orgs/PeARSearch/",
+    "image": "images/social/github.svg"
+  },
+  {
+      "name": "Email",
+      "link": "mailto:pears@possible-worlds.eu",
+      "image": "images/social/email.svg"
+  },
+]

@@ -1,0 +1,17 @@
+<div class="call">
+  <div class="call-box-top">
+	  <strong>Chat: </strong> join the discussion on <a href="https://github.com/orgs/possible-worlds-research/discussions">GitHub</a>!
+    {% if site.data.contact.email %}
+    <div class="call-email"><strong>Email: </strong>
+      <a href="mailto:{{ .site.data.contact.email }}">
+        {{ site.data.contact.email }}
+      </a>
+    </div>
+    {% endif %}
+  </div>
+    {% if include.show_button %}
+      <div class="call-box-bottom">
+	   <a href="{{ site.data.contact.contact_button_link }}" class="button"><img src="images/social/github.svg" width="30px"/> Organisation</a>
+      </div>
+    {% endif %}
+</div>
