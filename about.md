@@ -12,16 +12,17 @@ bodyClass: page-about
 PeARS is a search engine that you can run locally from your browser. It allows you to 'index' pages (i.e. to produce a computer-readable representation of the pages' content, essential to the search process), and to search pages that you or your friends have indexed. In a local setting, search happens entirely on your machine, meaning that no one knows what you are searching and when. In a federated setting, you and your friends can get together to maintain an search engine that you have entire control over.
 
 
-### PeARS Lite
-
-PeARS Lite is the local version of PeARS. It allows you to run a search engine on your local machine, in order to better organise your Web research. We are also developing plug-ins for the local version that will allow you to give your system extra powers, like the ability to index spreadsheets, Open Street Maps content, and to define your own special format types.
-
 ### [PeARS Federated](../federated)
-
 PeARS Federated is the decentralised version of PeARS. You may know the social media platform Mastodon: PeARS Federated is like Mastodon but for Web Search. Every instance of PeARS can be considered a mini search engine for a single topic of interest, which is populated via crowdsourcing. That means that if you sign up for an account, you can contribute to the content of the search index by sharing interesting URLs. This ensures that the index is of particularly high quality, as it has been vetted by human contributors. [Find out how Federated works](../federated)
 
-### PeARS Orchard
 
+### PeARS OMD
+PeARS OMD is a version of PeARS developed for the private cloud service [On My Disk](https://www.onmydisk.com/) (OMD). You can sign up for an OMD account [here](https://onmydisk.net/signup), download their client, and start straightaway with installing your own cloud system on your private device. PeARS is integrated into the system so that you can search through your files' content and metadata. We are currently beta-testing the system.
+
+### PeARS Lite
+PeARS Lite is the local version of PeARS. It allows you to run a search engine on your local machine, in order to better organise your Web research. We are also developing plug-ins for the local version that will allow you to give your system extra powers, like the ability to index spreadsheets, Open Street Maps content, and to define your own special format types.
+
+### PeARS Orchard
 Orchard is the PeARS system as it was meant to be: completely distributed. This version of PeARS is still under heavy development, so check back here for updates..
 
 
