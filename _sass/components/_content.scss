@@ -41,6 +41,13 @@
     font-weight: normal;
     margin-top: 30px;
   }
+  h3 a {
+    color: var(--bs-heading-color);
+    text-decoration: none;
+    }
+  h3 a:hover {
+	  color: $secondary;
+  }
   ul,
   ol {
     margin-bottom: 20px;
