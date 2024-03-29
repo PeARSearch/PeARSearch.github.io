@@ -1,7 +1,7 @@
 ---
 title: About PeARS Federated
 layout: page
-description: federated
+description: PeARS Federated is the decentralized version of the PeARS Web search engine.
 bodyClass: page-about
 ---
 
