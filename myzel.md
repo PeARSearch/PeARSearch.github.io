@@ -9,6 +9,12 @@ bodyClass: page-about
 Mycelium, by Christian Scheckhuber - Own work, CC BY-SA 4.0, <a href="https://commons.wikimedia.org/w/index.php?curid=44748236">Link</a>
 
 
+**Idea and conceptual design for a transparent supply chain platform:**<br> [Die DigitalLandscchaftsGärtnerin](https://diedigitallandschaftsgaertnerin.de/) (Julia Miosga)
+
+**Search implementation:**<br> [the PeARS Team](https://pearsproject.org/team/)  (Aurelie Herbelot / Gosse Minnema)
+
+
+
 ## What is PeARS Myzel? 
 
 PeARS Myzel is a <b>search engine of things</b> for sustainability audits. It helps people and businesses to track the provenance and sustainability of the products and supplies they buy.
@@ -29,9 +35,9 @@ In 2015, the global community adopted [the 2030 Agenda](https://sdgs.un.org/goal
 
 ### A decentralised system
 
-The PeARS project supports a democratic digital economy that promotes decentralized participation, creates transparency, acts socially and sustainably, and is secure. We have been working for a while on an open-source, federated search system. With Myzel, we port PeARS to the area of sustainability tracking and auditing, where supply chain data is involved.  
+The Myzel project supports a democratic digital economy that promotes decentralized participation, creates transparency, acts socially and sustainably, and is secure. At the PeARS project, we have been working for a while on an open-source, federated search system. With Myzel, we port that system to the area of sustainability tracking and auditing, where supply chain data is involved. This means being able to search and link electronic shipping documents, customs data, sensor data, certificates and more. (See Figure 1 in this [Bitkom experiment](https://www.bitkom.org/sites/main/files/2020-10/201014_bitkom-paper_digital-supply-chain-experiment.pdf), showing all data involved in a transport process.)
 
-Myzel is based on the codebase of [PeARS Federated](/federated/).
+Myzel is specifically based on the codebase of [PeARS Federated](/federated/).
 
 
 
