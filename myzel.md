@@ -13,7 +13,7 @@ Mycelium, by Christian Scheckhuber - Own work, CC BY-SA 4.0, <a href="https://co
 
 **Search implementation:**<br> [the PeARS Team](https://pearsproject.org/team/)  (Aurelie Herbelot / Gosse Minnema)
 
-
+**Current prototype:**<br> [https://www.myzel.link/](https://www.myzel.link/)
 
 ## What is PeARS Myzel? 
 
