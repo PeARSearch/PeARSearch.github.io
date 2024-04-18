@@ -8,7 +8,7 @@ bodyClass: page-about
 ![Different instances of PeARS Federated](/images/illustrations/instances.png)
 
 
-> **18.04.2024. This is a copy of the FAQ on PeARS Federated instances, to help you get a preview of the system. We are working hard on the instances themselves and hope to be able to invite some first testers in the next few weeks.**
+> **This is a copy of the FAQ on PeARS Federated instances, to help you get a preview of the system. We are working hard on the instances themselves and hope to be able to invite some first testers in the next few weeks (May 2024).**
 
 ## Where am I?
 
