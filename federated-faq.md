@@ -8,7 +8,7 @@ bodyClass: page-about
 ![Different instances of PeARS Federated](/images/illustrations/instances.png)
 
 
-> **This is a copy of the FAQ on PeARS Federated instances, to help you get a preview of the system.**
+> **18.04.2024. This is a copy of the FAQ on PeARS Federated instances, to help you get a preview of the system. We are working hard on the instances themselves and hope to be able to invite some first testers in the next few weeks.**
 
 ## Where am I?
 
@@ -23,15 +23,15 @@ You can read a technical description of PeARS Federated [here](/federated/).
 
 First, you will need to sign up for an account on this instance. We are happy to have you onboard!
 
-Every PeARS instance includes an indexing page which helps you with the hard work of converting documents into searchable representations. You can index in several ways but we will start with the simplest one, which consists in typing a single URL in the 'Index a single URL' box -- this will index just that page. You should also enter a keyword under the URL, telling PeARS the topic of the page you want to index. Over time, this will contribute to the creation of 'pods', which you can manage individually. Finally, add an optional note, if you feel like adding a comment about this resource that could be useful to others.
+Every PeARS instance includes an indexing page which helps you with the hard work of converting documents into searchable representations. You can index in several ways but we will start with the simplest one, which consists in typing a single URL in the 'Index a single URL' box -- this will index just that page. You should also enter a keyword under the URL, telling PeARS the theme of the page you want to index. Over time, this will contribute to the creation of topical 'pods', which you can manage individually. Finally, add an optional note, if you feel like adding a comment about this resource that could be useful to others.
 
 ![The indexing page of PeARS Federated](/images/illustrations/indexing_page.png)
 
 ## What is a pod?
 
-A pod is an index dedicated to a particular subtopic on the PeARS instance. Imagine the URL collection on this site is a library, and you are the librarian labelling different sections of your bookshelves. Having labelled sections help you direct visitors to the right book more easily. It also helps you and your fellow contributors managing the collection you have built.
+A pod is an index dedicated to a particular subtopic on the PeARS instance. Imagine the URL collection on this site is a library, and you are the librarian labelling different sections of your bookshelves. Having labelled sections help you direct visitors to the right book more easily. It also helps you and your fellow contributors manage the collection you have built.
 
-If needed, you can go and check which pages have been indexed for a particular subtopic. Head over to the 'pods' tab. There, you will find a pod for each keyword that has ever been used in the indexer. Each pod in the making shows you its current size. You can check the content of the pod by clicking on it. It is also possible to download the information contained in that pod.
+If needed, you can go and check which pages have been indexed for a particular subtopic. Head over to the 'Themes' tab. There, you will find a pod for each keyword that has ever been used in the indexer. Each pod in the making shows you its current size. You can check the content of the pod by clicking on it. It is also possible to download the information contained in that pod.
 
 ![The pods page of PeARS Federated](/images/illustrations/themes_page.png)
 
