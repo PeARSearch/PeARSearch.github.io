@@ -1,7 +1,7 @@
 ---
 title: Privacy Policy
 layout: page
-description: privacy
+description: Privacy policy of the PeARS project website.
 bodyClass: page
 ---
 

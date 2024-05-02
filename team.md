@@ -1,7 +1,7 @@
 ---
 title: Team
 layout: teams
-description: Team
+description: The team behind the PeARS project, a decentralized search engine.
 permalink: "/team/"
 intro_image: "/images/illustrations/pears_team.png"
 intro_image_absolute: true

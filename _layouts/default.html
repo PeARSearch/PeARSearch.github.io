@@ -18,7 +18,6 @@
   {% if page.meta_title %}<meta property="og:title" content="{{ page.meta_title }}"/>{% else %}<meta property="og:title" content="{{ page.title }}"/>{% endif %}
   <meta property="og:type" content="website"/>
   {% if site.data.seo.og_url %}<meta property="og:url" content="{{ site.data.seo.og_url }}"/>{% endif %}
-  {% if site.data.seo.og_url %}<meta property="og:image" content="{{ site.data.seo.og_image }}"/>{% endif %}
   {% if page.image %}<meta property="og:image" content="{{ page.image | absolute_url }}"/>{% endif %}
   {% if page.description %}<meta property="og:description" content="{{ page.description }}"/>{% endif %}
   <meta name="twitter:card" content="summary"/>
@@ -28,6 +27,7 @@
 </head>
 
 <body class='page {{layout.bodyClass}}'>
+  <a rel="me" href="https://fosstodon.org/@pears"></a>
   {% include main-menu-mobile.html %}
   <div id="wrapper" class="wrapper">
     {% include header.html headerClass='header-extra' %}

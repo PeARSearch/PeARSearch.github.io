@@ -1,7 +1,7 @@
 ---
 title: About
 layout: page
-description: About
+description: About PeARS, the decentralized Web search engine project.
 bodyClass: page-about
 ---
 
