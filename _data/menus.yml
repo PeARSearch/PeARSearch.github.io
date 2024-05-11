@@ -5,6 +5,9 @@ main:
   - name: "About"
     url: "/about/"
     weight: 2
+  - name: "Donate"
+    url: "https://opencollective.com/possible-worlds-research/projects/decentralized-web-search"
+    weight: 3
   - name: "Contact"
     url: "/contact/"
     weight: 5
