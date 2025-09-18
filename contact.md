@@ -1,6 +1,6 @@
 ---
 title: Contact
-layout: contact
+layout: page
 description: Contact page for PeARS, the decentralized search project.
 ---
 

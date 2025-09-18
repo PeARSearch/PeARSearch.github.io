@@ -17,13 +17,10 @@ PeARS Federated is the decentralised version of PeARS. You may know the social m
 
 
 ### PeARS OMD
-PeARS OMD is a version of PeARS developed for the private cloud service [On My Disk](https://www.onmydisk.com/) (OMD). You can sign up for an OMD account [here](https://onmydisk.net/signup), download their client, and start straightaway with installing your own cloud system on your private device. PeARS is integrated into the system so that you can search through your files' content and metadata. We are currently beta-testing the system.
+PeARS OMD is a version of PeARS developed for the private cloud service [On My Disk](https://onmydisk.com/) (OMD). You can sign up for an OMD account [here](https://onmydisk.net/signup), download their client, and start straightaway with installing your own cloud system on your private device. PeARS is integrated into the system so that you can search through your files' content and metadata.
 
 ### PeARS Lite
 PeARS Lite is the local version of PeARS. It allows you to run a search engine on your local machine, in order to better organise your Web research. We are also developing plug-ins for the local version that will allow you to give your system extra powers, like the ability to index spreadsheets, Open Street Maps content, and to define your own special format types.
-
-### PeARS Orchard
-Orchard is the PeARS system as it was meant to be: completely distributed. This version of PeARS is still under heavy development, so check back here for updates..
 
 
 
