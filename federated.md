@@ -13,7 +13,7 @@ bodyClass: page-about
 
 PeARS Federated is the decentralised version of PeARS. You may know the social media platform [Mastodon](https://joinmastodon.org/): PeARS Federated is like Mastodon but for Web Search. Every instance of PeARS can be considered a mini search engine for a single topic of interest, which is populated via crowdsourcing. That means that if you sign up for an account, you can contribute to the content of the search index by sharing interesting URLs. This ensures that the index is of particularly high quality, as it has been vetted by human contributors. Taken all together, the PeARS instances cover as many topics as there are contributors. The network is searchable from any instance, ensuring the best possible search coverage for your query.
 
-> **Status: alpha. We have three toy instances where you can try out the PeARS search functions: [https://trypears.org/](https://trypears.org/), [https://ai-pears.org/](https://ai-pears.org/) and [https://queer-pears.org/](https://queer-pears.org/). All other functions of PeARS have been disabled on those instances, so it is not possible at this time to create an account. If you want to see a preview of the account functionalities, including screenshots, head over to our [FAQ page](/federated-faq/).**
+> **Status: alpha. If you want to see a preview of the account functionalities, including screenshots, head over to our [FAQ page](/federated-faq/).**
 
 
 ### General architecture
